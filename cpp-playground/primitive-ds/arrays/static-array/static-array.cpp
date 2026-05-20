@@ -77,7 +77,8 @@ class StaticArray {
             arr = new int[capacity];
 
             for(int i = 0; i < length; i++) {
-                arr[i] = original.arr[i];
+                // original[i] can also be used here due to the overloading of the [] operator. But we will use original.arr[i] for clarity.
+                arr[i] = original.arr[i]; 
             }
         }
 
@@ -276,6 +277,10 @@ class StaticArray {
         // EXTRA: Overloading the [] operator to access elements of the array using array indexing syntax (e.g., arr[0], arr[1], etc.)
         // C++ specific but is used in many other languages as well.
         int& operator[](int index) {
+            if(index < 0 || index >= length) {
+                std::cerr << "Index out of bounds!" << std::endl;
+                exit(EXIT_FAILURE);
+            }
             return arr[index];
         }
 };
