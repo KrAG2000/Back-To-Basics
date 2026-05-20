@@ -70,8 +70,8 @@ class DynamicArray {
 
         // Move assignment operator: Similar to move constructor, but we also need to free the existing array of the current object before moving the new array from the other object. We also need to check for self-assignment to prevent issues when an object is assigned to itself.
         DynamicArray& operator=(DynamicArray&& original) {
-            if(this == &original) {
-                return *this;
+            if(this == &original) { // Both are pointers
+                return *this;  // Self-assignment check. Current object and original object are the same = Return current object
             }
         
             delete[] arr;
