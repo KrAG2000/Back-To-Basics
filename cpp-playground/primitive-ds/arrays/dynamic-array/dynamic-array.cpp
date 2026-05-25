@@ -21,7 +21,7 @@ class DynamicArray {
 
         int& operator[](int index) {
             if(index < 0 || index >= currentSize) {
-                std::cerr << "Index out of bounds!" << std::endl;
+                std::cerr << "Index outside the current capacity!" << std::endl;
                 exit(EXIT_FAILURE);
             }
             return arr[index];
@@ -121,7 +121,7 @@ class DynamicArray {
 
         void insert( int index, int value) {
             if(index < 0 || index > currentSize) {
-                std::cerr << "Index out of bounds!" << std::endl;
+                std::cerr << "Provided index outside of the capacity!" << std::endl;
                 exit(EXIT_FAILURE);
             }
 
@@ -148,7 +148,7 @@ class DynamicArray {
 
         void remove(int index) {
             if(index < 0 || index >= currentSize) {
-                std::cerr << "Index out of bounds!" << std::endl;
+                std::cerr << "Provided index outside of the capacity!" << std::endl;
                 exit(EXIT_FAILURE);
             }
 
@@ -160,7 +160,7 @@ class DynamicArray {
 
         int at(int index) {
             if(index < 0 || index >= currentSize) {
-                std::cerr << "Index out of bounds!" << std::endl;
+                std::cerr << "Provided index outside of the capacity!" << std::endl;
                 exit(EXIT_FAILURE);
             }
             return arr[index];
@@ -209,7 +209,7 @@ class DynamicArray {
 
         void swap(int index1, int index2) {
             if(index1 < 0 || index1 >= currentSize || index2 < 0 || index2 >= currentSize) {
-                std::cerr << "Index out of bounds!" << std::endl;
+                std::cerr << "Provided index outside of the capacity!" << std::endl;
                 exit(EXIT_FAILURE);
             }
 
@@ -250,3 +250,20 @@ class DynamicArray {
             }
         }
 };
+
+int main() {
+    DynamicArray vector;
+    vector.push_back(12);
+    vector.push_back(11);
+    vector.push_back(2000);
+
+    for(int i = 0; i < vector.size(); i++) {
+        std::cout<< vector[i] << " ";
+    }
+    std::cout << std::endl;
+
+    vector.push_back(02);
+    vector.push_back(03);
+    vector.push_back(2005);
+    vector.print();
+}

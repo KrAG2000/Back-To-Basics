@@ -18,7 +18,7 @@ class Node {
 };
 
 class SinglyLinkedList {
-    private:
+    public:
         Node* head;
 
     public:
@@ -28,6 +28,23 @@ class SinglyLinkedList {
 
         SinglyLinkedList(int data) {
             head = new Node(data);
+        }
+
+        SinglyLinkedList(SinglyLinkedList* original) {
+            if (original->head == nullptr) {
+                head = nullptr;
+                return;
+            }
+
+            head = new Node(original->head->data);
+            Node* currentOriginal = original->head->next;
+            Node* currentNew = head;
+
+            while (currentOriginal != nullptr) {
+                currentNew->next = new Node(currentOriginal->data);
+                currentNew = currentNew->next;
+                currentOriginal = currentOriginal->next;
+            }
         }
 
         SinglyLinkedList(int* arr, int size) { // Array contains data to insert into each node of the linked list
@@ -187,10 +204,35 @@ class SinglyLinkedList {
         int search(int key) {
             Node* currentHead = head;
             int counter = 0;
-
-            while(currentHead->next != nullptr) {
+            
+            while(currentHead != nullptr) {
+                std::cout << currentHead->data << " - " << key << std::endl; 
                 if(currentHead->data == key) return key;
+                else currentHead = currentHead->next;
             }
             return -1; // Key not found
         }
 };
+
+int main() {
+    SinglyLinkedList list;
+    std::cout << "Inserting 10: " << std::endl;
+    list.insert(10);
+    std::cout << "Inserting 20: " << std::endl;
+    list.insert(20);
+    std::cout << "Inserting 30: " << std::endl;
+    list.insert(30);
+    std::cout << "Inserting 40: " << std::endl;
+    list.insert(40, 0);
+    std::cout << "Inserting 50: " << std::endl;
+    list.insert(50, 2);
+
+    std::cout << "Search for 30: " << list.search(30) << std::endl; // Should print 30
+    std::cout << "Search for 60: " << list.search(60) << std::endl; // Should print -1 (not found)
+
+    // list.deelete(0); // Delete head
+    // list.deelete(-1); // Delete tail
+    // list.deelete(1); // Delete at position 1
+
+    return 0;
+}

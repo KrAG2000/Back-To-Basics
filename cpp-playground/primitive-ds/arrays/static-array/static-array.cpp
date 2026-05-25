@@ -284,3 +284,27 @@ class StaticArray {
             return arr[index];
         }
 };
+
+int main() {
+    StaticArray staticVector(3);
+    staticVector.push_back(12);
+    staticVector.push_back(11);
+    staticVector.push_back(2000);
+
+    for(int i = 0; i < staticVector.size(); i++) {
+        std::cout<< staticVector[i] << " ";
+    }
+    std::cout << std::endl;
+
+    staticVector.remove(1);
+    staticVector.insert(1, 02);
+    staticVector.remove(0);
+    staticVector.insert(0, 03);
+    staticVector.remove(2);
+    staticVector.insert(2, 2005);
+
+    for(int i = 0; i < staticVector.size(); i++) {
+        std::cout<< staticVector[i] << " ";
+    }
+    std::cout << std::endl;
+}
