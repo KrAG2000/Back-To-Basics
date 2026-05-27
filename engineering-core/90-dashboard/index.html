@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Engineering Core Dashboard</title>
+    <link rel="stylesheet" href="./assets/styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="hero">
+        <p class="eyebrow">Engineering Core</p>
+        <h1>Daily progress, world momentum, and repo activity</h1>
+        <p class="lede">
+          A local-first dashboard that turns repo work into a readable learning trail.
+        </p>
+      </section>
+
+      <section class="grid grid-two">
+        <article class="card" id="overview-card"></article>
+        <article class="card" id="boss-card"></article>
+      </section>
+
+      <section class="card">
+        <div class="section-head">
+          <h2>World Progress</h2>
+          <p>Worlds only advance from activity in their own practice, quest, project, and review areas.</p>
+        </div>
+        <div id="world-progress" class="world-list"></div>
+      </section>
+
+      <section class="grid grid-two">
+        <article class="card">
+          <div class="section-head">
+            <h2>Today</h2>
+            <p>Created, updated, deleted files, plus commits.</p>
+          </div>
+          <div id="today-summary"></div>
+        </article>
+
+        <article class="card">
+          <div class="section-head">
+            <h2>General Repo Activity</h2>
+            <p>Everything in the repo still counts, even when it does not advance the course.</p>
+          </div>
+          <div id="general-summary"></div>
+        </article>
+      </section>
+
+      <section class="grid grid-two">
+        <article class="card">
+          <div class="section-head">
+            <h2>Daily Timeline</h2>
+            <p>Last 21 active days from file events and commit history.</p>
+          </div>
+          <div id="timeline"></div>
+        </article>
+
+        <article class="card">
+          <div class="section-head">
+            <h2>Recent Commits</h2>
+            <p>Latest commit messages and the scopes they touched.</p>
+          </div>
+          <div id="recent-commits"></div>
+        </article>
+      </section>
+    </main>
+
+    <script src="./data/progress.js"></script>
+    <script src="./assets/app.js"></script>
+  </body>
+</html>

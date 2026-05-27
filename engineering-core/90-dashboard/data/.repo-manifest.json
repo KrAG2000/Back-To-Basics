@@ -1,0 +1,647 @@
+{
+  "README.md": {
+    "size": 8073,
+    "mtime": 1779194762.54203,
+    "sha1": "7f3768ccbf3912e2deb27023249536ada1c2a1ba"
+  },
+  "v1_folder-structure.sh": {
+    "size": 7511,
+    "mtime": 1779195854.698888,
+    "sha1": "09b53d0d6ab7c8196b2aedecf3728e51148e8d8b"
+  },
+  "Progress.md": {
+    "size": 166,
+    "mtime": 1779475617.46572,
+    "sha1": "add99a3eadcf62ee83719d313baca705edb03cfa"
+  },
+  "cpp-playground/README.md": {
+    "size": 1933,
+    "mtime": 1779822686.604597,
+    "sha1": "2fded37c0874f522ee987091c392539df2de2898"
+  },
+  "system-engineering/browser-life-cycle.md": {
+    "size": 16522,
+    "mtime": 1779880203.625323,
+    "sha1": "10fbae9a9bae637c86e67c2379e9496f3a37a886"
+  },
+  "engineering-core/README.md": {
+    "size": 1261,
+    "mtime": 1779883185.714139,
+    "sha1": "ec68bb40dad9b42b7a342e28224cb3e38f53ccf7"
+  },
+  "engineering-core/00-control-tower/README.md": {
+    "size": 713,
+    "mtime": 1779883185.715139,
+    "sha1": "52b803af21aaf64849dbd8496c71a6c371048ea5"
+  },
+  "engineering-core/00-control-tower/roadmap-12-weeks.md": {
+    "size": 1094,
+    "mtime": 1779883185.715139,
+    "sha1": "535c9bb0dcac01ef78ca63a959ad28096396b4fb"
+  },
+  "engineering-core/00-control-tower/world-map.yaml": {
+    "size": 2720,
+    "mtime": 1779883185.716821,
+    "sha1": "295802bc5ac8b3ae68a324d509215a48be3f3ceb"
+  },
+  "engineering-core/00-control-tower/lesson-index.yaml": {
+    "size": 4214,
+    "mtime": 1779883185.717308,
+    "sha1": "c3a05c4484fc99faa8bf62712c0457c9b5938566"
+  },
+  "engineering-core/00-control-tower/tracker-rules.yaml": {
+    "size": 4507,
+    "mtime": 1779883185.717502,
+    "sha1": "d189a6cf4de31d8e9b6344bd97340e1385736b8d"
+  },
+  "engineering-core/00-control-tower/project-ladder.md": {
+    "size": 1177,
+    "mtime": 1779883185.717686,
+    "sha1": "4824430f4eb58b280bc6744fac46e4ac087b292d"
+  },
+  "engineering-core/01-world-machine-memory/README.md": {
+    "size": 680,
+    "mtime": 1779883267.934206,
+    "sha1": "f09847a9b04b1ff1212bd5fa61a3b37c45e7d863"
+  },
+  "engineering-core/02-world-data-logic/README.md": {
+    "size": 618,
+    "mtime": 1779883267.938207,
+    "sha1": "18f984ad1a97ee41cb7374a0e5d2b15685f15136"
+  },
+  "engineering-core/03-world-requests-networking/README.md": {
+    "size": 550,
+    "mtime": 1779883267.941206,
+    "sha1": "c91eafaf837273720f68810169f3ef6277660f59"
+  },
+  "engineering-core/04-world-storage-databases/README.md": {
+    "size": 465,
+    "mtime": 1779883267.943207,
+    "sha1": "7ca717289eec62c5ecf885573fbcf8320f96b765"
+  },
+  "engineering-core/05-world-processes-concurrency/README.md": {
+    "size": 499,
+    "mtime": 1779883333.984266,
+    "sha1": "3a89ff9355aee2887b82ce935a9f27d334c81ce4"
+  },
+  "engineering-core/06-world-service-construction/README.md": {
+    "size": 448,
+    "mtime": 1779883333.987266,
+    "sha1": "6f676d5d31cb945e70cbe0042183ec38cbac3292"
+  },
+  "engineering-core/07-world-distributed-systems/README.md": {
+    "size": 422,
+    "mtime": 1779883333.989266,
+    "sha1": "9c3fa9984450e0747660995fab994c79f2cd7a94"
+  },
+  "engineering-core/08-world-architecture-arena/README.md": {
+    "size": 493,
+    "mtime": 1779883333.991266,
+    "sha1": "1fcf73fdb7b95e0902ddeef2a83c68149fd17847"
+  },
+  "engineering-core/80-automation/README.md": {
+    "size": 667,
+    "mtime": 1779883185.717686,
+    "sha1": "740dc1a56ae4e7d3caf60e448ebeb8d35cfe4308"
+  },
+  "engineering-core/80-automation/generate-progress.py": {
+    "size": 14562,
+    "mtime": 1779883185.718184,
+    "sha1": "d95c3873572c784c55eac8c6196ff0a0c1c2857a"
+  },
+  "engineering-core/80-automation/watch-progress.py": {
+    "size": 502,
+    "mtime": 1779883185.718354,
+    "sha1": "a9eb5d5c08dc5363bc630279f1c5d05b00effcb7"
+  },
+  "engineering-core/80-automation/install-git-hooks.sh": {
+    "size": 989,
+    "mtime": 1779883185.718529,
+    "sha1": "d6b086f995ac503968a2895a51a6f480ab740acb"
+  },
+  "engineering-core/90-dashboard/README.md": {
+    "size": 490,
+    "mtime": 1779883185.718529,
+    "sha1": "d76931f74f93b83e106d91264285acdb5de52d8a"
+  },
+  "engineering-core/90-dashboard/index.html": {
+    "size": 2318,
+    "mtime": 1779883185.718529,
+    "sha1": "6c04185180341c7ede3f22533d4e89b5ee7b7915"
+  },
+  "engineering-core/90-dashboard/assets/styles.css": {
+    "size": 2762,
+    "mtime": 1779883185.718529,
+    "sha1": "dd137eac5351573073a88f5c8754fb7a4e1c7723"
+  },
+  "engineering-core/90-dashboard/assets/app.js": {
+    "size": 5305,
+    "mtime": 1779883185.718529,
+    "sha1": "99427598709638e7d881b37e058c11d3556d236f"
+  },
+  "engineering-core/80-automation/__pycache__/generate-progress.cpython-313.pyc": {
+    "size": 20965,
+    "mtime": 1779883394.48687,
+    "sha1": "eceefda980b63f7497633dee79eb526cc439b5e3"
+  },
+  "engineering-core/80-automation/__pycache__/watch-progress.cpython-313.pyc": {
+    "size": 1029,
+    "mtime": 1779883394.487465,
+    "sha1": "31f11eb11281f8e845df2e95f55bb0a8e52ca89e"
+  },
+  "engineering-core/08-world-architecture-arena/01-lessons/01-estimation-and-tradeoff-storytelling.md": {
+    "size": 381,
+    "mtime": 1779883333.991266,
+    "sha1": "264c2f1864afb4a217384026a31984211f75c10b"
+  },
+  "engineering-core/08-world-architecture-arena/01-lessons/02-capstone-architecture-review.md": {
+    "size": 248,
+    "mtime": 1779883333.991266,
+    "sha1": "2fbc04557a40d9cc8c8378b16ab4ce4f97c51315"
+  },
+  "engineering-core/08-world-architecture-arena/02-drills/README.md": {
+    "size": 130,
+    "mtime": 1779883333.991266,
+    "sha1": "55f6f617edbcf753b63a15c1ac05fefcb8d12508"
+  },
+  "engineering-core/08-world-architecture-arena/03-build-quest/README.md": {
+    "size": 198,
+    "mtime": 1779883333.992266,
+    "sha1": "fa4ce041d131b30e70039356fdd5e83ce1a1a535"
+  },
+  "engineering-core/08-world-architecture-arena/04-boss-project/README.md": {
+    "size": 251,
+    "mtime": 1779883333.992266,
+    "sha1": "845901e9126f02cd004d7c2a255e6d5b3594277a"
+  },
+  "engineering-core/08-world-architecture-arena/05-review-gate/README.md": {
+    "size": 199,
+    "mtime": 1779883333.992266,
+    "sha1": "99cf519931bc68b426b6a64657997a6320f766ea"
+  },
+  "engineering-core/07-world-distributed-systems/01-lessons/01-scaling-consistency-and-replication.md": {
+    "size": 253,
+    "mtime": 1779883333.989266,
+    "sha1": "d66aaaf3cb2b1de07fa775f36d05af5b6d70bd88"
+  },
+  "engineering-core/07-world-distributed-systems/01-lessons/02-pubsub-cache-and-search-slices.md": {
+    "size": 286,
+    "mtime": 1779883333.989266,
+    "sha1": "a10a85048bd324a6a7e1b40adb1eff0382a38350"
+  },
+  "engineering-core/07-world-distributed-systems/02-drills/README.md": {
+    "size": 158,
+    "mtime": 1779883333.990266,
+    "sha1": "74ec4d086f9d4a3bd990fef415563e1b683ef2b4"
+  },
+  "engineering-core/07-world-distributed-systems/03-build-quest/README.md": {
+    "size": 150,
+    "mtime": 1779883333.990266,
+    "sha1": "77b4fa232b3420b62e49ab3782f11bfc82771a8f"
+  },
+  "engineering-core/07-world-distributed-systems/04-boss-project/README.md": {
+    "size": 212,
+    "mtime": 1779883333.990266,
+    "sha1": "f44ca2764e5699632ec691dedfd9473310f05616"
+  },
+  "engineering-core/07-world-distributed-systems/05-review-gate/README.md": {
+    "size": 232,
+    "mtime": 1779883333.991266,
+    "sha1": "da7dac7c762bb34e3f8815135961f89d1a7151ff"
+  },
+  "engineering-core/06-world-service-construction/01-lessons/01-service-boundaries-and-observability.md": {
+    "size": 372,
+    "mtime": 1779883333.987266,
+    "sha1": "139c427fc1994755ae6eee2eb065e08a423b747b"
+  },
+  "engineering-core/06-world-service-construction/01-lessons/02-auth-jobs-and-production-behavior.md": {
+    "size": 263,
+    "mtime": 1779883333.987266,
+    "sha1": "ec8d0cec6111e7a2379744bd52009f52e0ee0dab"
+  },
+  "engineering-core/06-world-service-construction/02-drills/README.md": {
+    "size": 173,
+    "mtime": 1779883333.988266,
+    "sha1": "94eeda6306a018be14dc009b0116fe3cb4c53cda"
+  },
+  "engineering-core/06-world-service-construction/03-build-quest/README.md": {
+    "size": 141,
+    "mtime": 1779883333.988266,
+    "sha1": "ae71a486793b665843184c7f35762601585383c5"
+  },
+  "engineering-core/06-world-service-construction/04-boss-project/README.md": {
+    "size": 207,
+    "mtime": 1779883333.988266,
+    "sha1": "211910828c8f5f042d6a29aafd4c85cc0ff7c271"
+  },
+  "engineering-core/06-world-service-construction/05-review-gate/README.md": {
+    "size": 216,
+    "mtime": 1779883333.989266,
+    "sha1": "f0da2b6b4406b6b144593875b444459c210a30e1"
+  },
+  "engineering-core/05-world-processes-concurrency/01-lessons/01-processes-threads-and-scheduling.md": {
+    "size": 359,
+    "mtime": 1779883333.985266,
+    "sha1": "87a75d53ddeed19e71be489dce95b2a522f7aca0"
+  },
+  "engineering-core/05-world-processes-concurrency/01-lessons/02-locks-queues-and-backpressure.md": {
+    "size": 351,
+    "mtime": 1779883333.986266,
+    "sha1": "ae8180b7deb7298c52186a576964cd2f342e9a15"
+  },
+  "engineering-core/05-world-processes-concurrency/02-drills/README.md": {
+    "size": 133,
+    "mtime": 1779883333.986266,
+    "sha1": "6eb0b25614351d68463a2926f193c01a35a6d13b"
+  },
+  "engineering-core/05-world-processes-concurrency/03-build-quest/README.md": {
+    "size": 145,
+    "mtime": 1779883333.986266,
+    "sha1": "ae71d5cd936ac5e506d21e43c4dc455dfbde1beb"
+  },
+  "engineering-core/05-world-processes-concurrency/04-boss-project/README.md": {
+    "size": 194,
+    "mtime": 1779883333.986266,
+    "sha1": "4356d68b7941a5f4cb2ac0052f3490198a0f7882"
+  },
+  "engineering-core/05-world-processes-concurrency/05-review-gate/README.md": {
+    "size": 213,
+    "mtime": 1779883333.987266,
+    "sha1": "3253681dbd71f1008ec0631fe133a57c10b2f506"
+  },
+  "engineering-core/04-world-storage-databases/01-lessons/01-pages-wal-and-indexes.md": {
+    "size": 337,
+    "mtime": 1779883267.943207,
+    "sha1": "96380c58eb1a50fb28ed9447ba34d25edd6337f3"
+  },
+  "engineering-core/04-world-storage-databases/01-lessons/02-sql-isolation-and-data-modeling.md": {
+    "size": 339,
+    "mtime": 1779883267.944702,
+    "sha1": "a5f6012f4a95c61dbe20be87d5a6f0ed7b8ae28a"
+  },
+  "engineering-core/04-world-storage-databases/02-drills/README.md": {
+    "size": 138,
+    "mtime": 1779883267.944702,
+    "sha1": "a891337cdf03da71dbc3ad70ac4f020855c43957"
+  },
+  "engineering-core/04-world-storage-databases/03-build-quest/README.md": {
+    "size": 141,
+    "mtime": 1779883267.944702,
+    "sha1": "4f47d5b821607d9f973c1713cfa13263ad181adb"
+  },
+  "engineering-core/04-world-storage-databases/04-boss-project/README.md": {
+    "size": 241,
+    "mtime": 1779883267.944702,
+    "sha1": "afc550e1edb4e13cda768920759aa8eb1acb2e77"
+  },
+  "engineering-core/04-world-storage-databases/05-review-gate/README.md": {
+    "size": 241,
+    "mtime": 1779883267.945207,
+    "sha1": "0719edf16da6b38c78b850ff1b48ef37c8708c52"
+  },
+  "engineering-core/03-world-requests-networking/01-lessons/01-browser-lifecycle-and-network-stack.md": {
+    "size": 534,
+    "mtime": 1779883267.941206,
+    "sha1": "6b5b657ecc52cbd45c19790373563d89f0bd394d"
+  },
+  "engineering-core/03-world-requests-networking/01-lessons/02-sockets-apis-and-rate-limits.md": {
+    "size": 442,
+    "mtime": 1779883267.942707,
+    "sha1": "7cd32b14c3854d9d21d388ef87ed9253896656a4"
+  },
+  "engineering-core/03-world-requests-networking/02-drills/README.md": {
+    "size": 214,
+    "mtime": 1779883267.942707,
+    "sha1": "7e5e864d5920fd27a09bb235bb4bf1de93c0b33a"
+  },
+  "engineering-core/03-world-requests-networking/03-build-quest/README.md": {
+    "size": 188,
+    "mtime": 1779883267.942707,
+    "sha1": "b49b45b3adff002b75542c8d8bce78bd298d2df1"
+  },
+  "engineering-core/03-world-requests-networking/04-boss-project/README.md": {
+    "size": 254,
+    "mtime": 1779883267.942707,
+    "sha1": "3318c955037c63917a03ebcc83ae459596373d71"
+  },
+  "engineering-core/03-world-requests-networking/05-review-gate/README.md": {
+    "size": 317,
+    "mtime": 1779883267.942707,
+    "sha1": "cf40190a5c69cfb31954dd7d8f4bc3bb04772eb2"
+  },
+  "engineering-core/02-world-data-logic/01-lessons/01-core-dsa-as-tools.md": {
+    "size": 465,
+    "mtime": 1779883267.938207,
+    "sha1": "916082c3e06da99ed53c1df24dd8d70c1f026eb2"
+  },
+  "engineering-core/02-world-data-logic/01-lessons/02-graphs-dp-and-heuristics.md": {
+    "size": 445,
+    "mtime": 1779883267.939772,
+    "sha1": "ef9a1171c20e394c5d6ef133fd00215d478a232f"
+  },
+  "engineering-core/02-world-data-logic/02-drills/README.md": {
+    "size": 163,
+    "mtime": 1779883267.939772,
+    "sha1": "5c706ed71dd980d0db2dc9f566eb4c6678727615"
+  },
+  "engineering-core/02-world-data-logic/03-build-quest/README.md": {
+    "size": 177,
+    "mtime": 1779883267.939772,
+    "sha1": "57a6a29e72aedbc3a50215a1aee82e6e1bbd1d7b"
+  },
+  "engineering-core/02-world-data-logic/04-boss-project/README.md": {
+    "size": 266,
+    "mtime": 1779883267.939772,
+    "sha1": "c51eb8652f3af6b22f453f8bd96f8ccc3e7a56cd"
+  },
+  "engineering-core/02-world-data-logic/05-review-gate/README.md": {
+    "size": 338,
+    "mtime": 1779883267.940207,
+    "sha1": "b6a48e348b4afc4608b464db5287451dde321de4"
+  },
+  "engineering-core/01-world-machine-memory/01-lessons/01-bits-binary-cpu.md": {
+    "size": 596,
+    "mtime": 1779883267.934206,
+    "sha1": "c3861d4361e4c2efab4d894c1c62ab6b27cee1c0"
+  },
+  "engineering-core/01-world-machine-memory/01-lessons/02-memory-layout-debugging.md": {
+    "size": 628,
+    "mtime": 1779883267.935207,
+    "sha1": "bfa09b8b30bce855ef883d436ed736c0b658fd50"
+  },
+  "engineering-core/01-world-machine-memory/02-drills/README.md": {
+    "size": 170,
+    "mtime": 1779883267.935207,
+    "sha1": "3e2693e0c10b9d3e498e80141dda8c43fb13b389"
+  },
+  "engineering-core/01-world-machine-memory/03-build-quest/README.md": {
+    "size": 251,
+    "mtime": 1779883267.936207,
+    "sha1": "20acee0820a7b87299cdc883adeb3ef0d51156df"
+  },
+  "engineering-core/01-world-machine-memory/04-boss-project/README.md": {
+    "size": 321,
+    "mtime": 1779883267.936207,
+    "sha1": "2071eaa9dfedf9a959d18c3a1b4f4a71caec6265"
+  },
+  "engineering-core/01-world-machine-memory/05-review-gate/README.md": {
+    "size": 306,
+    "mtime": 1779883267.937207,
+    "sha1": "277e4358d8a1b7d7dba2b47f90e5d6d04fd16d6c"
+  },
+  "cpp-playground/00-guides/standard-practices.md": {
+    "size": 109,
+    "mtime": 1779197240.571824,
+    "sha1": "49445c865678b5332b4d511abfd51fbc6aeeebe8"
+  },
+  "cpp-playground/00-guides/README.md": {
+    "size": 216,
+    "mtime": 1779821953.898264,
+    "sha1": "ce6bc773c8f9606571adb816e813c7513653518c"
+  },
+  "cpp-playground/01-foundations/README.md": {
+    "size": 817,
+    "mtime": 1779822686.604597,
+    "sha1": "54c894755568d22d1e044fd1376e31556416156b"
+  },
+  "cpp-playground/04-algorithms/README.md": {
+    "size": 612,
+    "mtime": 1779822686.612597,
+    "sha1": "e5d66293623ebb4f69a4aa00d3c3f7592e7f1d3f"
+  },
+  "cpp-playground/06-problem-solving/README.md": {
+    "size": 599,
+    "mtime": 1779822686.627597,
+    "sha1": "a7053937fd37486ed6b7a5a586ff87910e5a4032"
+  },
+  "cpp-playground/07-support/README.md": {
+    "size": 245,
+    "mtime": 1779821934.863258,
+    "sha1": "f942fcce77f7f23736b4adad2a584b033450b4eb"
+  },
+  "cpp-playground/90-beyond-dsa/README.md": {
+    "size": 315,
+    "mtime": 1779821934.863258,
+    "sha1": "a842fa366cb5a76c733ad56113991beb6577edd3"
+  },
+  "cpp-playground/02-patterns/README.md": {
+    "size": 802,
+    "mtime": 1779822686.605597,
+    "sha1": "50aba405507eae114946cf8234f4a89305535ee3"
+  },
+  "cpp-playground/03-data-structures/README.md": {
+    "size": 517,
+    "mtime": 1779822686.610597,
+    "sha1": "85f95c8df9f9e936a258872c6c14fef91abcac9e"
+  },
+  "cpp-playground/05-projects/README.md": {
+    "size": 779,
+    "mtime": 1779822686.613597,
+    "sha1": "112b80a6e846761344931d01a1d89523602bbe3a"
+  },
+  "cpp-playground/05-projects/01-implementation-level/README.md": {
+    "size": 422,
+    "mtime": 1779822686.613597,
+    "sha1": "d715bd433f16bc8e80296d1b05799ba1d68ecb58"
+  },
+  "cpp-playground/05-projects/02-applied-mini-systems/README.md": {
+    "size": 384,
+    "mtime": 1779822686.618597,
+    "sha1": "7ae94ea85168d01c7988f81261651cff327c3bba"
+  },
+  "cpp-playground/05-projects/03-large-scale-systems/README.md": {
+    "size": 393,
+    "mtime": 1779822686.624597,
+    "sha1": "f035095a0c7cf900e008376371e48b45ae6342ed"
+  },
+  "cpp-playground/05-projects/03-large-scale-systems/01-distributed-cache/README.md": {
+    "size": 369,
+    "mtime": 1779822686.624597,
+    "sha1": "ea5a1deb31320714bd2f1246be2614c4894a0fd0"
+  },
+  "cpp-playground/05-projects/03-large-scale-systems/02-chat-system/README.md": {
+    "size": 374,
+    "mtime": 1779822686.625597,
+    "sha1": "9af6922591746ef6676015060253c4817b3007b2"
+  },
+  "cpp-playground/05-projects/03-large-scale-systems/03-search-engine/README.md": {
+    "size": 358,
+    "mtime": 1779822686.625597,
+    "sha1": "084dd27ef3ca305bf47d18e9006214cc5f5f22e7"
+  },
+  "cpp-playground/05-projects/03-large-scale-systems/04-pub-sub-platform/README.md": {
+    "size": 361,
+    "mtime": 1779822686.626597,
+    "sha1": "5f54e2f2a30404c2dd1d148a5c189c8d1121a121"
+  },
+  "cpp-playground/05-projects/03-large-scale-systems/05-ride-matching-system/README.md": {
+    "size": 405,
+    "mtime": 1779822686.627597,
+    "sha1": "fdbd79439eb3a842d641147c5a9900f32d369b94"
+  },
+  "cpp-playground/05-projects/02-applied-mini-systems/01-url-shortener/README.md": {
+    "size": 417,
+    "mtime": 1779822686.620597,
+    "sha1": "a066427d56dd6dfc2fdb2935bf82010df040dbe4"
+  },
+  "cpp-playground/05-projects/02-applied-mini-systems/02-rate-limiter/README.md": {
+    "size": 411,
+    "mtime": 1779822686.621597,
+    "sha1": "acc0f39d7247f93007cf6ebc667f315596d51b1b"
+  },
+  "cpp-playground/05-projects/02-applied-mini-systems/03-in-memory-key-value-store/README.md": {
+    "size": 390,
+    "mtime": 1779822686.621597,
+    "sha1": "2b313a931b8c074a5e3cc22e34c54775b7ce6cbc"
+  },
+  "cpp-playground/05-projects/02-applied-mini-systems/04-search-autocomplete/README.md": {
+    "size": 413,
+    "mtime": 1779822686.622597,
+    "sha1": "dd07268ca530b8a5bc1b207e43df61bdcd4ce88c"
+  },
+  "cpp-playground/05-projects/02-applied-mini-systems/05-job-scheduler/README.md": {
+    "size": 343,
+    "mtime": 1779822686.623597,
+    "sha1": "16a0b3dad530dbb9d825e1c14460aafa0824349b"
+  },
+  "cpp-playground/05-projects/01-implementation-level/01-lru-cache/README.md": {
+    "size": 399,
+    "mtime": 1779822686.615597,
+    "sha1": "7c55ac4f19fd01017e8ce94328cd48418fb7162e"
+  },
+  "cpp-playground/05-projects/01-implementation-level/02-min-stack/README.md": {
+    "size": 311,
+    "mtime": 1779822686.616597,
+    "sha1": "bc05ccb4593555b2d0555c660f3950d2593900c2"
+  },
+  "cpp-playground/05-projects/01-implementation-level/03-union-find-engine/README.md": {
+    "size": 400,
+    "mtime": 1779822686.616597,
+    "sha1": "a7145ca7524ca3c6e336a9ac1c0a6fe51393a0e7"
+  },
+  "cpp-playground/05-projects/01-implementation-level/04-trie-autocomplete/README.md": {
+    "size": 349,
+    "mtime": 1779822686.616597,
+    "sha1": "9bb758381364368c92788b407d3a59fd72d4a0d8"
+  },
+  "cpp-playground/05-projects/01-implementation-level/05-segment-tree-range-query/README.md": {
+    "size": 410,
+    "mtime": 1779822686.617597,
+    "sha1": "ccb9e21e39d9640ee7ca76d658295d361d53f3bd"
+  },
+  "cpp-playground/03-data-structures/linear/README.md": {
+    "size": 568,
+    "mtime": 1779822686.610597,
+    "sha1": "2a02b2a2611fa91e3c6a0cbe8f84650023c98e97"
+  },
+  "cpp-playground/03-data-structures/nonlinear/README.md": {
+    "size": 546,
+    "mtime": 1779822686.612257,
+    "sha1": "fbd9748e2b4f1ec37944f19ee94fd956c4d66fc6"
+  },
+  "cpp-playground/03-data-structures/advanced/README.md": {
+    "size": 658,
+    "mtime": 1779822686.612597,
+    "sha1": "29a6225bc49641fd03f18b7a5b8ff6301412032b"
+  },
+  "cpp-playground/03-data-structures/linear/arrays/use-cases.md": {
+    "size": 6629,
+    "mtime": 1779383947.938157,
+    "sha1": "4753f9f86c29fdf299b2fe166476b6e671406c5f"
+  },
+  "cpp-playground/03-data-structures/linear/arrays/README.md": {
+    "size": 349,
+    "mtime": 1779821934.859258,
+    "sha1": "3269708580b77d14248428021005b04c734fdb19"
+  },
+  "cpp-playground/03-data-structures/linear/linked-lists/singly-linked-list/singly-linked-list.cpp": {
+    "size": 6559,
+    "mtime": 1779729552.908273,
+    "sha1": "c194c0cc45ea6226f842bf9df16686c7d1bb636e"
+  },
+  "cpp-playground/03-data-structures/linear/arrays/static-array/static-array.cpp": {
+    "size": 12310,
+    "mtime": 1779731070.421024,
+    "sha1": "866940bf613e0456828e97c24b6d904faff293a5"
+  },
+  "cpp-playground/03-data-structures/linear/arrays/dynamic-array/dynamic-array.cpp": {
+    "size": 10328,
+    "mtime": 1779730049.374093,
+    "sha1": "334462608bac56e2031e6cd75730d7998d8d6289"
+  },
+  "cpp-playground/03-data-structures/linear/arrays/sparse-array/sparse-array.cpp": {
+    "size": 2261,
+    "mtime": 1779310275.249501,
+    "sha1": "eb73b239091e11be3a685b465b3e2bac746b3f74"
+  },
+  "cpp-playground/02-patterns/01-array-and-string-patterns/README.md": {
+    "size": 641,
+    "mtime": 1779822686.605597,
+    "sha1": "63fc7b106c2bb4f23985b534e69459c81e7c6872"
+  },
+  "cpp-playground/02-patterns/02-linked-list-patterns/README.md": {
+    "size": 494,
+    "mtime": 1779822686.606597,
+    "sha1": "051e1e705164747245ebb3d290b230f608f09c85"
+  },
+  "cpp-playground/02-patterns/03-stack-and-queue-patterns/README.md": {
+    "size": 597,
+    "mtime": 1779822686.606597,
+    "sha1": "11eb1368e286153f94f727b143ea8db2040ceb70"
+  },
+  "cpp-playground/02-patterns/04-tree-patterns/README.md": {
+    "size": 553,
+    "mtime": 1779822686.607597,
+    "sha1": "3fa8f091c89c9760534883d0979f261bb6f68381"
+  },
+  "cpp-playground/02-patterns/05-heap-and-greedy-patterns/README.md": {
+    "size": 581,
+    "mtime": 1779822686.608597,
+    "sha1": "14becf1f013be9bf5ee47c08022660fd1bc1b112"
+  },
+  "cpp-playground/02-patterns/06-graph-patterns/README.md": {
+    "size": 566,
+    "mtime": 1779822686.608597,
+    "sha1": "30d10adc1cedfe3e8ceaaa339d4dbe5f7f7c04bd"
+  },
+  "cpp-playground/02-patterns/07-dynamic-programming-patterns/README.md": {
+    "size": 542,
+    "mtime": 1779822686.608597,
+    "sha1": "775e182bcc151c85631aceda87bde915c8482c15"
+  },
+  "cpp-playground/02-patterns/08-interval-and-sweep-patterns/README.md": {
+    "size": 482,
+    "mtime": 1779822686.609597,
+    "sha1": "624ed3921f1c62a0c6c277b27fca192843e2d023"
+  },
+  "cpp-playground/02-patterns/09-bitwise-and-math-patterns/README.md": {
+    "size": 535,
+    "mtime": 1779822686.609597,
+    "sha1": "08226401c357da5ac7161cec177b3df2ed71ce36"
+  },
+  "cpp-playground/06-problem-solving/solved-problems/README.md": {
+    "size": 210,
+    "mtime": 1779821934.861735,
+    "sha1": "3d4032239b9535b4ee38f780e016974a9a5ce35e"
+  },
+  "cpp-playground/06-problem-solving/revision-notes/README.md": {
+    "size": 194,
+    "mtime": 1779821934.862258,
+    "sha1": "fb9ce520242e87a1cba85f15a9f372eb311b77c6"
+  },
+  "cpp-playground/06-problem-solving/templates/README.md": {
+    "size": 279,
+    "mtime": 1779821934.863207,
+    "sha1": "120af6131c06d1c4e3fc1155609c9699bf8d0cb5"
+  },
+  "cpp-playground/06-problem-solving/pattern-drills/README.md": {
+    "size": 231,
+    "mtime": 1779822686.628597,
+    "sha1": "4dc2b35740940c2581c3ccd811dc5f6173a1c0a7"
+  },
+  "cpp-playground/06-problem-solving/mock-rounds/README.md": {
+    "size": 302,
+    "mtime": 1779822686.629597,
+    "sha1": "0328b30d6416cd66afc7dcb4ae03a4e094f576a1"
+  }
+}

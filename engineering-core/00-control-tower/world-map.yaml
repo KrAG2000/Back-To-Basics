@@ -1,0 +1,76 @@
+{
+  "worlds": [
+    {
+      "id": "world-01",
+      "slug": "01-world-machine-memory",
+      "title": "Machine Memory",
+      "summary": "Build the low-level model for bits, memory layout, CPU behavior, and debugging.",
+      "prerequisites": [],
+      "bossProjectId": "memory-cache-explorer",
+      "defaultXp": 100
+    },
+    {
+      "id": "world-02",
+      "slug": "02-world-data-logic",
+      "title": "Data Logic",
+      "summary": "Use core DSA and problem-solving patterns as tools for building real systems.",
+      "prerequisites": ["world-01"],
+      "bossProjectId": "dsa-toolkit",
+      "defaultXp": 100
+    },
+    {
+      "id": "world-03",
+      "slug": "03-world-requests-networking",
+      "title": "Requests and Networking",
+      "summary": "Follow data from browser to service and learn the protocols that make systems talk.",
+      "prerequisites": ["world-01", "world-02"],
+      "bossProjectId": "socket-http-service",
+      "defaultXp": 100
+    },
+    {
+      "id": "world-04",
+      "slug": "04-world-storage-databases",
+      "title": "Storage and Databases",
+      "summary": "Understand persistence, indexing, SQL, and transactional reasoning.",
+      "prerequisites": ["world-01", "world-02", "world-03"],
+      "bossProjectId": "persistent-kv-store",
+      "defaultXp": 100
+    },
+    {
+      "id": "world-05",
+      "slug": "05-world-processes-concurrency",
+      "title": "Processes and Concurrency",
+      "summary": "Master threads, scheduling, coordination, and the cost of shared state.",
+      "prerequisites": ["world-01", "world-02", "world-03"],
+      "bossProjectId": "job-queue-scheduler",
+      "defaultXp": 100
+    },
+    {
+      "id": "world-06",
+      "slug": "06-world-service-construction",
+      "title": "Service Construction",
+      "summary": "Learn how to shape APIs, boundaries, observability, and production behavior.",
+      "prerequisites": ["world-03", "world-04", "world-05"],
+      "bossProjectId": "production-api-service",
+      "defaultXp": 100
+    },
+    {
+      "id": "world-07",
+      "slug": "07-world-distributed-systems",
+      "title": "Distributed Systems",
+      "summary": "Study scaling, failure modes, partitioning, replication, and system tradeoffs.",
+      "prerequisites": ["world-04", "world-05", "world-06"],
+      "bossProjectId": "distributed-systems-slices",
+      "defaultXp": 100
+    },
+    {
+      "id": "world-08",
+      "slug": "08-world-architecture-arena",
+      "title": "Architecture Arena",
+      "summary": "Turn knowledge into senior-level design judgment, communication, and tradeoff depth.",
+      "prerequisites": ["world-06", "world-07"],
+      "bossProjectId": "architecture-capstone",
+      "defaultXp": 100
+    }
+  ]
+}

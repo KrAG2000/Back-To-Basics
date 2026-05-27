@@ -1,0 +1,133 @@
+{
+  "ignoreGlobs": [
+    ".git/**",
+    ".git",
+    "__pycache__/**",
+    ".pytest_cache/**",
+    "node_modules/**",
+    "dist/**",
+    "build/**",
+    ".venv/**",
+    "venv/**",
+    "engineering-core/90-dashboard/data/progress.json",
+    "engineering-core/90-dashboard/data/progress.js",
+    "engineering-core/90-dashboard/data/.repo-manifest.json",
+    "engineering-core/90-dashboard/data/.activity-log.json"
+  ],
+  "eventWeights": {
+    "created": 8,
+    "updated": 4,
+    "deleted": 3,
+    "commit": 10
+  },
+  "pathRules": [
+    {
+      "id": "world-01",
+      "label": "Machine Memory",
+      "include": [
+        "engineering-core/01-world-machine-memory/02-drills/**",
+        "engineering-core/01-world-machine-memory/03-build-quest/**",
+        "engineering-core/01-world-machine-memory/04-boss-project/**",
+        "engineering-core/01-world-machine-memory/05-review-gate/**"
+      ],
+      "exclude": [
+        "engineering-core/01-world-machine-memory/**/README.md"
+      ]
+    },
+    {
+      "id": "world-02",
+      "label": "Data Logic",
+      "include": [
+        "engineering-core/02-world-data-logic/02-drills/**",
+        "engineering-core/02-world-data-logic/03-build-quest/**",
+        "engineering-core/02-world-data-logic/04-boss-project/**",
+        "engineering-core/02-world-data-logic/05-review-gate/**"
+      ],
+      "exclude": [
+        "engineering-core/02-world-data-logic/**/README.md"
+      ]
+    },
+    {
+      "id": "world-03",
+      "label": "Requests and Networking",
+      "include": [
+        "engineering-core/03-world-requests-networking/02-drills/**",
+        "engineering-core/03-world-requests-networking/03-build-quest/**",
+        "engineering-core/03-world-requests-networking/04-boss-project/**",
+        "engineering-core/03-world-requests-networking/05-review-gate/**"
+      ],
+      "exclude": [
+        "engineering-core/03-world-requests-networking/**/README.md"
+      ]
+    },
+    {
+      "id": "world-04",
+      "label": "Storage and Databases",
+      "include": [
+        "engineering-core/04-world-storage-databases/02-drills/**",
+        "engineering-core/04-world-storage-databases/03-build-quest/**",
+        "engineering-core/04-world-storage-databases/04-boss-project/**",
+        "engineering-core/04-world-storage-databases/05-review-gate/**"
+      ],
+      "exclude": [
+        "engineering-core/04-world-storage-databases/**/README.md"
+      ]
+    },
+    {
+      "id": "world-05",
+      "label": "Processes and Concurrency",
+      "include": [
+        "engineering-core/05-world-processes-concurrency/02-drills/**",
+        "engineering-core/05-world-processes-concurrency/03-build-quest/**",
+        "engineering-core/05-world-processes-concurrency/04-boss-project/**",
+        "engineering-core/05-world-processes-concurrency/05-review-gate/**"
+      ],
+      "exclude": [
+        "engineering-core/05-world-processes-concurrency/**/README.md"
+      ]
+    },
+    {
+      "id": "world-06",
+      "label": "Service Construction",
+      "include": [
+        "engineering-core/06-world-service-construction/02-drills/**",
+        "engineering-core/06-world-service-construction/03-build-quest/**",
+        "engineering-core/06-world-service-construction/04-boss-project/**",
+        "engineering-core/06-world-service-construction/05-review-gate/**"
+      ],
+      "exclude": [
+        "engineering-core/06-world-service-construction/**/README.md"
+      ]
+    },
+    {
+      "id": "world-07",
+      "label": "Distributed Systems",
+      "include": [
+        "engineering-core/07-world-distributed-systems/02-drills/**",
+        "engineering-core/07-world-distributed-systems/03-build-quest/**",
+        "engineering-core/07-world-distributed-systems/04-boss-project/**",
+        "engineering-core/07-world-distributed-systems/05-review-gate/**"
+      ],
+      "exclude": [
+        "engineering-core/07-world-distributed-systems/**/README.md"
+      ]
+    },
+    {
+      "id": "world-08",
+      "label": "Architecture Arena",
+      "include": [
+        "engineering-core/08-world-architecture-arena/02-drills/**",
+        "engineering-core/08-world-architecture-arena/03-build-quest/**",
+        "engineering-core/08-world-architecture-arena/04-boss-project/**",
+        "engineering-core/08-world-architecture-arena/05-review-gate/**"
+      ],
+      "exclude": [
+        "engineering-core/08-world-architecture-arena/**/README.md"
+      ]
+    }
+  ],
+  "fallback": {
+    "id": "general-repo-activity",
+    "label": "General Repo Activity"
+  }
+}
