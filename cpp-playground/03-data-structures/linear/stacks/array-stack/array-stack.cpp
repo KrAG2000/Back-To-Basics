@@ -1,3 +1,9 @@
+/**
+ * Push, Pop, Peek and isEmpty: All 4 are O(1) operations.
+ * Space Complexity: O(n) where n is the number of elements in the stack.
+ * The stack is implemented using a vector, which allows dynamic resizing and efficient memory management.
+ */
+
 #include <iostream>
 #include <vector>
 
