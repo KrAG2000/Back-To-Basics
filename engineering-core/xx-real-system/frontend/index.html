@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Production-inspired payment infrastructure simulator">
+  <title>Switchyard — Payment Infrastructure Lab</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="brand"><span class="brand-mark">S</span><span><b>Switchyard</b><small>PAYMENT INFRASTRUCTURE LAB</small></span></div>
+    <nav>
+      <button class="nav active" data-view="overview"><span>⌁</span> Overview</button>
+      <button class="nav" data-view="simulator"><span>▶</span> Simulation lab</button>
+      <button class="nav" data-view="payments"><span>↔</span> Payment explorer</button>
+      <button class="nav" data-view="operations"><span>⚙</span> Operations</button>
+      <button class="nav" data-view="architecture"><span>◇</span> Architecture</button>
+      <button class="nav" data-view="learn"><span>?</span> Concept guide</button>
+    </nav>
+    <div class="sidebar-foot"><span class="pulse"></span> EDUCATIONAL SIMULATION<small>No real money or credentials</small></div>
+  </aside>
+  <main>
+    <header><div><p class="eyebrow" id="section-kicker">CONTROL ROOM</p><h1 id="section-title">System overview</h1></div><div class="header-actions"><span id="health" class="health"><i></i> Connecting</span><button class="button ghost" id="refresh">Refresh</button><button class="button primary" data-jump="simulator">New simulation</button></div></header>
+
+    <section class="view active" id="view-overview">
+      <div class="notice"><b>Production-inspired, deliberately transparent.</b> This lab models public payment-system patterns. It is not connected to real banks, UPI, or payment networks.</div>
+      <div class="metrics" id="metrics"></div>
+      <div class="grid two-wide">
+        <article class="panel"><div class="panel-head"><div><p class="eyebrow">LIVE FLOW</p><h2>Recent payments</h2></div><button class="text-button" data-jump="payments">View explorer →</button></div><div class="table-wrap"><table><thead><tr><th>Payment</th><th>Method</th><th>Amount</th><th>Provider</th><th>Status</th><th>Created</th></tr></thead><tbody id="recent-payments"></tbody></table></div></article>
+        <article class="panel"><div class="panel-head"><div><p class="eyebrow">ROUTING HEALTH</p><h2>Provider performance</h2></div></div><div id="providers-chart" class="providers-chart"></div></article>
+      </div>
+      <div class="grid three">
+        <article class="panel compact"><p class="eyebrow">MONEY MOVEMENT</p><h2>Ledger versus payment</h2><p class="muted">A green payment can still be awaiting settlement. Financial truth lives in balanced journals, not status labels.</p><button class="text-button" data-jump="learn">Open concept guide →</button></article>
+        <article class="panel compact"><p class="eyebrow">RELIABILITY</p><h2>Unknown is honest</h2><p class="muted">Lost responses become <code>UNKNOWN</code>, then inquiry or reconciliation determines provider truth.</p><button class="text-button" data-scenario="lost_response">Run lost response →</button></article>
+        <article class="panel compact"><p class="eyebrow">ASYNC PIPELINE</p><h2>Outbox & queues</h2><div class="large-stat" id="queue-total">0</div><p class="muted">messages visible in Redis-backed queues</p></article>
+      </div>
+    </section>
+
+    <section class="view" id="view-simulator">
+      <div class="sim-layout">
+        <article class="panel scenario-panel"><p class="eyebrow">SCENARIO BUILDER</p><h2>Construct a payment</h2><form id="simulation-form">
+          <label>Predefined scenario<select id="scenario-select"></select></label>
+          <div class="form-row"><label>Amount (₹)<input id="amount" type="number" min="1" step="0.01" value="5000"></label><label>Payment method<select id="method"><option>UPI</option><option>CARD</option><option>BANK</option><option>WALLET</option><option>NET_BANKING</option></select></label></div>
+          <div class="form-row"><label>Customer<select id="customer"></select></label><label>Merchant<select id="merchant"></select></label></div>
+          <label>Source account<select id="source-account"></select></label>
+          <div class="form-row"><label>Capture<select id="capture-method"><option>AUTOMATIC</option><option>MANUAL</option></select></label><label>Provider behavior<select id="provider-behavior"><option>SUCCESS</option><option>PENDING</option><option>LOST_RESPONSE</option><option>NETWORK_TIMEOUT</option><option>INSUFFICIENT_FUNDS</option><option>PROVIDER_503</option><option>MALFORMED_RESPONSE</option></select></label></div>
+          <div class="form-row"><label>Risk injection<select id="risk-behavior"><option>NORMAL</option><option>BLOCK</option><option>REVIEW</option></select></label><label>Inquiry truth<select id="inquiry-outcome"><option value="">Still unknown</option><option>SUCCESS</option><option>FAILED</option></select></label></div>
+          <label class="check"><input id="recon-mismatch" type="checkbox"> Inject provider status mismatch during reconciliation</label>
+          <button class="button primary full" type="submit">Run deterministic simulation</button>
+        </form></article>
+        <div><article class="panel architecture-mini"><div class="panel-head"><div><p class="eyebrow">TRANSACTION PATH</p><h2>Component activity</h2></div><span class="legend"><i></i> active <i class="error-dot"></i> failure</span></div><div class="flow" id="live-flow"></div></article><article class="panel result-panel" id="simulation-result"><div class="empty"><span>◎</span><h3>No scenario running</h3><p>Build a payment on the left. Every stage shown here is backed by persisted events.</p></div></article></div>
+      </div>
+    </section>
+
+    <section class="view" id="view-payments">
+      <article class="panel"><div class="panel-head"><div><p class="eyebrow">TRANSACTION RECORDS</p><h2>Payment explorer</h2></div><div class="filters"><input id="payment-search" placeholder="Payment ID, provider ref, merchant"><select id="status-filter"><option value="">All statuses</option><option>SUCCESS</option><option>UNKNOWN</option><option>AUTHORIZED</option><option>DECLINED</option><option>FAILED</option><option>SETTLED</option><option>REFUNDED</option></select></div></div><div class="table-wrap"><table><thead><tr><th>Payment</th><th>Customer → Merchant</th><th>Amount</th><th>Method / route</th><th>Ledger</th><th>Status</th></tr></thead><tbody id="payment-list"></tbody></table></div></article>
+      <article class="panel detail" id="payment-detail"><div class="empty"><span>↔</span><h3>Select a payment</h3><p>Inspect its risk, route, attempts, journals, events, webhooks, and settlement.</p></div></article>
+    </section>
+
+    <section class="view" id="view-operations">
+      <div class="grid three" id="operation-summary"></div>
+      <article class="panel"><div class="panel-head"><div><p class="eyebrow">SYNTHETIC TEST DATA</p><h2>Participants & instruments</h2></div><div class="detail-actions"><button class="button ghost" data-setup="CUSTOMER">Create customer</button><button class="button ghost" data-setup="MERCHANT">Create merchant</button><button class="button ghost" data-setup="ACCOUNT">Create bank account / VPA</button></div></div><div id="participant-list" class="split-inspector"></div></article>
+      <div class="grid two"><article class="panel"><div class="panel-head"><div><p class="eyebrow">PROVIDER CONTROL</p><h2>Routing participants</h2></div></div><div id="provider-controls"></div></article><article class="panel"><p class="eyebrow">OPERATOR ACTIONS</p><h2>Workers & financial jobs</h2><div class="action-grid"><button class="button ghost" id="process-webhooks">Process webhooks</button><button class="button ghost" id="publish-outbox">Publish outbox</button><button class="button ghost" id="run-reconciliation">Run reconciliation</button><button class="button ghost" id="run-settlement">Settle demo merchant</button></div><pre id="operation-output">Select an operation to see its result.</pre></article></div>
+      <article class="panel"><div class="panel-head"><div><p class="eyebrow">DELIVERY PIPELINE</p><h2>Outbox & webhook records</h2></div></div><div class="split-inspector"><div><h3>Transactional outbox</h3><div id="outbox-list" class="record-list"></div></div><div><h3>Merchant webhooks</h3><div id="webhook-list" class="record-list"></div></div></div></article>
+    </section>
+
+    <section class="view" id="view-architecture">
+      <article class="panel"><p class="eyebrow">REFERENCE ARCHITECTURE</p><h2>One request, several kinds of truth</h2><p class="lead">Synchronous orchestration decides whether to accept and route a request. PostgreSQL commits payment and outbox truth atomically. Redis makes asynchronous work visible. Independent ledger, settlement, and reconciliation stages protect financial correctness.</p><div class="architecture-map" id="architecture-map"></div></article>
+      <div class="grid three"><article class="panel compact"><b>Realistic concepts</b><p class="muted">Explicit actors, authorization holds, state machine, double-entry journals, routing, risk, unknown outcomes, outbox, idempotency, settlement and reconciliation.</p></article><article class="panel compact"><b>Simplified simulations</b><p class="muted">Providers, banks, network messages, clearing files, webhook endpoints, fees, disputes and bank balances are deterministic local abstractions.</p></article><article class="panel compact"><b>Intentionally absent</b><p class="muted">No real PANs, bank credentials, PCI scope, HSM, live rails, multi-region consensus, regulatory reporting, or claim of proprietary implementation.</p></article></div>
+    </section>
+
+    <section class="view" id="view-learn"><div class="learn-intro"><p class="eyebrow">FIELD GUIDE</p><h2>Follow the money, not just the status</h2><p class="lead">Use these definitions while inspecting a transaction. Each concept points to a behavior implemented by the simulator.</p></div><div class="concept-grid" id="concept-grid"></div></section>
+  </main>
+  <div class="toast" id="toast"></div>
+  <script type="module" src="/app.js"></script>
+</body>
+</html>
